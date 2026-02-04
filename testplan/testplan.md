@@ -1,66 +1,46 @@
 Testplan – Leerlingadministratiesysteem (EduTech Solutions)
-1. Doel
+    1. Doel
 
-Het doel van dit testplan is het verifiëren van de nieuwe functionaliteit waarbij een overzicht van leerlingen rechts in beeld wordt getoond en waarbij gebruikers via een popup de details van een leerling kunnen bekijken.
+        Het doel van dit testplan is het verifiëren van de nieuwe functionaliteit waarbij een overzicht van leerlingen rechts in beeld wordt getoond en waarbij gebruikers via een popup de details van een leerling kunnen bekijken.
 
-2. Scope
+    2. Scope
 
-In scope:
+        In scope:
 
-Leerlingenoverzicht rechts in het scherm
+            Leerlingenoverzicht rechts in beeld
+            Weergave voor- en achternaam
+            Popup met leerlingdetails
+            Sluiten van popup (kruisje + buiten klikken)
+            Toevoegen van leerlingen
+            Aanwezigheidsregistratie
 
-Weergave voor- en achternaam
+        Buiten scope:
 
-Popup met leerlingdetails
+            Autorisaties en rollen
+            Beveiliging
+            Performance en load
+            Backend/databases
 
-Sluiten van popup via kruisje
+    3. Testbasis
 
-Sluiten van popup via klik buiten popup
+        Casusbeschrijving
+        UI (Home.html)
+        Code-inspectie van script.js
 
-Toevoegen van leerlingen
+    4. Teststrategie
 
-Aanwezigheidsregistratie
+        De teststrategie is gebaseerd op een risico-gebaseerde aanpak.
+        Hieronder zijn de belangrijkste risico’s geïdentificeerd.
 
-Buiten scope:
+            | Risico                                       | Impact     
+            | ----------------------------------           | ---------   
+            | Popup sluit niet (via x of buiten popup)     | Gemiddeld      
+            | Leerling niet zichtbaar in lijst             | Hoog     
+            | Verkeerde leerlingdetails (lijst & popup)    | Hoog      
+            | Geen/verkeerde aanwezigheidsregistratie      | Hoog 
 
-Backend/databases
+    5. Testomgeving
 
-Performance
-
-Autorisaties en beveiliging
-
-3. Testbasis
-
-Casusbeschrijving
-
-UI (Home.html)
-
-Code-inspectie van script.js
-
-4. Teststrategie
-
-Handmatig testen in Google Chrome
-
-Exploratief testen
-
-Functioneel testen
-
-Negatieve testen (foutscenario’s)
-
-5. Testomgeving
-
-Besturingssysteem: Chrome OS (Linux Crostini)
-
-Browser: Google Chrome
-
-Applicatie: Lokale HTML/JS applicatie
-
-6. Risico’s
-
-Onjuiste weergave van leerlinggegevens
-
-Popup die niet sluit
-
-Verkeerde koppeling tussen leerling en details
-
-Gebrek aan invoervalidatie
+        Besturingssysteem: Chrome OS (Linux Crostini)
+        Browser: Google Chrome
+        Applicatie: Lokale HTML/JS applicatie
