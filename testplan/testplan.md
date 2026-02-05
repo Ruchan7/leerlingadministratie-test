@@ -1,4 +1,5 @@
 Testplan – Leerlingadministratiesysteem (EduTech Solutions)
+    
     1. Doel
 
         Het doel van dit testplan is het verifiëren van de nieuwe functionaliteit waarbij een overzicht van leerlingen rechts in beeld wordt getoond en waarbij gebruikers via een popup de details van een leerling kunnen bekijken.
@@ -44,3 +45,15 @@ Testplan – Leerlingadministratiesysteem (EduTech Solutions)
         Besturingssysteem: Chrome OS (Linux Crostini)
         Browser: Google Chrome
         Applicatie: Lokale HTML/JS applicatie
+
+    6. Automatiseren (advies)
+
+        Te automatiseren:
+        - Leerlingenlijst toont namen + klik op leerling opent popup + sluiten via kruisje/buiten klik.
+        - Toevoegen leerling en controleren dat leerling in lijst verschijnt.
+        - Aanwezigheid bijwerken en controleren dat record verschijnt.
+
+        Waarom:
+        - Deze testen zijn herhaalbaar en kritisch.
+        - Automatisering is efficienter en geeft snelle feedback na wijzigingen (CI).
+
